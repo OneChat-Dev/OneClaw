@@ -85,7 +85,7 @@ vi.mock('electron-updater', () => ({
 }))
 
 // Import after mocks
-import { UpdateMirror } from '@shared/config/constant'
+import { APP_NAME, UpdateConfigUrl, UpdateMirror } from '@shared/config/constant'
 import { app, net } from 'electron'
 
 import AppUpdater from '../AppUpdater'
@@ -309,7 +309,17 @@ describe('AppUpdater', () => {
       const result = await (appUpdater as any)._fetchUpdateConfig(UpdateMirror.GITHUB)
 
       expect(result).toEqual(mockConfig)
-      expect(net.fetch).toHaveBeenCalledWith(expect.stringContaining('github'), expect.any(Object))
+      expect(net.fetch).toHaveBeenCalledWith(UpdateConfigUrl.GITHUB, expect.any(Object))
+      expect(net.fetch).toHaveBeenCalledWith(
+        expect.any(String),
+        expect.objectContaining({
+          headers: expect.objectContaining({
+            'App-Name': APP_NAME
+          })
+        })
+      )
+      expect(UpdateConfigUrl.GITHUB).toContain('OneChat-Dev/OneClaw')
+      expect(APP_NAME).toBe('OneClaw')
     })
 
     it('should fetch config from GitCode mirror', async () => {
@@ -321,8 +331,8 @@ describe('AppUpdater', () => {
       const result = await (appUpdater as any)._fetchUpdateConfig(UpdateMirror.GITCODE)
 
       expect(result).toEqual(mockConfig)
-      // GitCode URL may vary, just check that fetch was called
-      expect(net.fetch).toHaveBeenCalledWith(expect.any(String), expect.any(Object))
+      expect(net.fetch).toHaveBeenCalledWith(UpdateConfigUrl.GITCODE, expect.any(Object))
+      expect(UpdateConfigUrl.GITCODE).toContain('OneChat-Dev/OneClaw')
     })
 
     it('should return null on HTTP error', async () => {

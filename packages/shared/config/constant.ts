@@ -198,13 +198,13 @@ export const GB = 1024 * MB
 export const defaultLanguage = 'en-US'
 
 export enum FeedUrl {
-  PRODUCTION = 'https://releases.cherry-ai.com',
-  GITHUB_LATEST = 'https://github.com/CherryHQ/cherry-studio/releases/latest/download'
+  PRODUCTION = 'https://releases.onechat.chat',
+  GITHUB_LATEST = 'https://github.com/OneChat-Dev/OneClaw/releases/latest/download'
 }
 
 export enum UpdateConfigUrl {
-  GITHUB = 'https://raw.githubusercontent.com/CherryHQ/cherry-studio/refs/heads/x-files/app-upgrade-config/app-upgrade-config.json',
-  GITCODE = 'https://raw.gitcode.com/CherryHQ/cherry-studio/raw/x-files%2Fapp-upgrade-config/app-upgrade-config.json'
+  GITHUB = 'https://raw.githubusercontent.com/OneChat-Dev/OneClaw/refs/heads/x-files/app-upgrade-config/app-upgrade-config.json',
+  GITCODE = 'https://raw.gitcode.com/OneChat-Dev/OneClaw/raw/x-files%2Fapp-upgrade-config/app-upgrade-config.json'
 }
 
 export enum UpgradeChannel {
@@ -503,4 +503,4 @@ export const CHERRYIN_CONFIG = {
   SCOPES: 'openid profile email offline_access balance:read usage:read tokens:read tokens:write'
 }
 
-export const APP_NAME = 'Cherry Studio'
+export const APP_NAME = 'OneClaw'
