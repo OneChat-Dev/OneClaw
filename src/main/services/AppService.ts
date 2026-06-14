@@ -29,7 +29,7 @@ export class AppService {
     } else if (isLinux) {
       try {
         const autostartDir = path.join(os.homedir(), '.config', 'autostart')
-        const desktopFile = path.join(autostartDir, isDev ? 'cherry-studio-dev.desktop' : 'cherry-studio.desktop')
+        const desktopFile = path.join(autostartDir, isDev ? 'oneclaw-dev.desktop' : 'oneclaw.desktop')
 
         if (isLaunchOnBoot) {
           // Ensure autostart directory exists
@@ -49,10 +49,10 @@ export class AppService {
           // Create desktop file content
           const desktopContent = `[Desktop Entry]
   Type=Application
-  Name=Cherry Studio
-  Comment=A powerful AI assistant for producer.
+  Name=OneClaw
+  Comment=OneClaw AI assistant desktop client.
   Exec=${executablePath}
-  Icon=cherrystudio
+  Icon=oneclaw
   Terminal=false
   StartupNotify=false
   Categories=Development;Utility;

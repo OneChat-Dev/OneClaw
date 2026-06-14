@@ -128,7 +128,7 @@ const CHERRYIN_OFFICIAL_HOSTNAMES = new Set([
   'open.cherryin.ai',
   'open.cherryin.cc',
   'open.cherryin.dev',
-  'open.cherryin.net'
+  'api.onechat.tools'
 ])
 
 export function isDeepSeekOfficialHost(host: string | undefined): boolean {

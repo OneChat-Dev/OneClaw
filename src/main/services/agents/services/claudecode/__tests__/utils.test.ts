@@ -56,15 +56,15 @@ describe('isMiMoOfficialHost', () => {
 describe('isCherryInOfficialHost', () => {
   it('matches CherryIN official endpoints', () => {
     expect(isCherryInOfficialHost('https://open.cherryin.cc')).toBe(true)
-    expect(isCherryInOfficialHost('https://open.cherryin.net/anthropic')).toBe(true)
+    expect(isCherryInOfficialHost('https://api.onechat.tools/anthropic')).toBe(true)
     expect(isCherryInOfficialHost('  https://open.cherryin.ai/v1  ')).toBe(true)
     expect(isCherryInOfficialHost('https://open.cherryin.dev')).toBe(true)
   })
 
   it('rejects third-party and lookalike hosts', () => {
     expect(isCherryInOfficialHost('https://openrouter.ai/api/v1')).toBe(false)
-    expect(isCherryInOfficialHost('https://open.cherryin.net.evil.com')).toBe(false)
-    expect(isCherryInOfficialHost('https://notopen.cherryin.net')).toBe(false)
+    expect(isCherryInOfficialHost('https://api.onechat.tools.evil.com')).toBe(false)
+    expect(isCherryInOfficialHost('https://notapi.onechat.tools')).toBe(false)
   })
 
   it('handles missing or malformed hosts gracefully', () => {

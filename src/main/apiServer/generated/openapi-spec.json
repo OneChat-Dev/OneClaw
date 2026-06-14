@@ -1,12 +1,12 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Cherry Studio API",
+    "title": "OneClaw API",
     "version": "1.0.0",
-    "description": "OpenAI-compatible API for Cherry Studio with additional Cherry-specific endpoints",
+    "description": "OpenAI-compatible API for OneClaw with additional OneClaw-specific endpoints",
     "contact": {
-      "name": "Cherry Studio",
-      "url": "https://github.com/CherryHQ/cherry-studio"
+      "name": "OneClaw",
+      "url": "https://github.com/OneChat-Dev/OneClaw"
     }
   },
   "servers": [
@@ -21,7 +21,7 @@
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "JWT",
-        "description": "Use the API key from Cherry Studio settings"
+        "description": "Use the API key from OneClaw settings"
       }
     },
     "schemas": {
@@ -3153,7 +3153,7 @@
                   "properties": {
                     "name": {
                       "type": "string",
-                      "example": "Cherry Studio API"
+                      "example": "OneClaw API"
                     },
                     "version": {
                       "type": "string",

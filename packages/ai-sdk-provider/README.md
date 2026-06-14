@@ -21,9 +21,9 @@ import { createCherryIn, cherryIn } from '@cherrystudio/ai-sdk-provider'
 const cherryInProvider = createCherryIn({
   apiKey: process.env.CHERRYIN_API_KEY,
   // optional overrides:
-  // baseURL: 'https://open.cherryin.net/v1',
-  // anthropicBaseURL: 'https://open.cherryin.net/anthropic',
-  // geminiBaseURL: 'https://open.cherryin.net/gemini/v1beta',
+  // baseURL: 'https://api.onechat.tools/v1',
+  // anthropicBaseURL: 'https://api.onechat.tools/anthropic',
+  // geminiBaseURL: 'https://api.onechat.tools/gemini/v1beta',
 })
 
 // Chat models will auto-route based on the model id prefix:

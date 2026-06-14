@@ -22,9 +22,9 @@ import type { FetchFunction } from '@ai-sdk/provider-utils'
 import { loadApiKey, withoutTrailingSlash } from '@ai-sdk/provider-utils'
 
 export const CHERRYIN_PROVIDER_NAME = 'cherryin' as const
-export const DEFAULT_CHERRYIN_BASE_URL = 'https://open.cherryin.net/v1'
-export const DEFAULT_CHERRYIN_ANTHROPIC_BASE_URL = 'https://open.cherryin.net/v1'
-export const DEFAULT_CHERRYIN_GEMINI_BASE_URL = 'https://open.cherryin.net/v1beta/models'
+export const DEFAULT_CHERRYIN_BASE_URL = 'https://api.onechat.tools/v1'
+export const DEFAULT_CHERRYIN_ANTHROPIC_BASE_URL = 'https://api.onechat.tools/v1'
+export const DEFAULT_CHERRYIN_GEMINI_BASE_URL = 'https://api.onechat.tools/v1beta/models'
 
 const ANTHROPIC_PREFIX = /^anthropic\//i
 const GEMINI_PREFIX = /^google\//i
@@ -48,19 +48,19 @@ export interface CherryInProviderSettings {
   /**
    * Base URL for OpenAI-compatible CherryIN endpoints.
    *
-   * Defaults to `https://open.cherryin.net/v1`.
+   * Defaults to `https://api.onechat.tools/v1`.
    */
   baseURL?: string
   /**
    * Base URL for Anthropic-compatible endpoints.
    *
-   * Defaults to `https://open.cherryin.net/anthropic`.
+   * Defaults to `https://api.onechat.tools/anthropic`.
    */
   anthropicBaseURL?: string
   /**
    * Base URL for Gemini-compatible endpoints.
    *
-   * Defaults to `https://open.cherryin.net/gemini/v1beta`.
+   * Defaults to `https://api.onechat.tools/gemini/v1beta`.
    */
   geminiBaseURL?: string
   /**

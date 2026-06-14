@@ -11,19 +11,24 @@ interface CherryINSettingsProps {
 
 const API_HOST_OPTIONS = [
   {
-    value: 'https://open.cherryin.cc',
-    labelKey: '加速域名',
-    description: 'open.cherryin.cc'
+    value: 'https://api.onechat.tools',
+    labelKey: '自动优选线路',
+    description: 'api.onechat.tools'
   },
   {
-    value: 'https://open.cherryin.net',
-    labelKey: '国际域名',
-    description: 'open.cherryin.net'
+    value: 'https://jp.onechat.tools',
+    labelKey: '日本线路',
+    description: 'jp.onechat.tools'
   },
   {
-    value: 'https://open.cherryin.ai',
-    labelKey: '备用域名',
-    description: 'open.cherryin.ai'
+    value: 'https://ncr.onechat.tools',
+    labelKey: '南亚/西亚线路',
+    description: 'ncr.onechat.tools'
+  },
+  {
+    value: 'https://de.onechat.tools',
+    labelKey: '欧洲线路',
+    description: 'de.onechat.tools'
   }
 ]
 

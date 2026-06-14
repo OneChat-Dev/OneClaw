@@ -1,12 +1,12 @@
 {
-  "name": "CherryStudio",
+  "name": "OneClaw",
   "version": "1.9.11",
   "private": true,
-  "description": "A powerful AI assistant for producer.",
-  "desktopName": "CherryStudio.desktop",
+  "description": "OneClaw AI assistant desktop client.",
+  "desktopName": "OneClaw.desktop",
   "main": "./out/main/index.js",
-  "author": "support@cherry-ai.com",
-  "homepage": "https://github.com/CherryHQ/cherry-studio",
+  "author": "OneChat-Dev",
+  "homepage": "https://github.com/OneChat-Dev/OneClaw",
   "engines": {
     "node": ">=24.11.1"
   },

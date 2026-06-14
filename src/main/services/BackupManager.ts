@@ -149,7 +149,7 @@ class BackupManager {
     return {
       version: 6,
       timestamp: Date.now(),
-      appName: 'Cherry Studio',
+      appName: 'OneClaw',
       appVersion: app.getVersion(),
       platform: process.platform,
       arch: process.arch
@@ -580,9 +580,9 @@ class BackupManager {
       const metadataPath = path.join(this.tempDir, 'metadata.json')
       const metadata = await fs.readJson(metadataPath)
 
-      // Validate appName to ensure backup is from Cherry Studio
-      if (metadata.appName !== 'Cherry Studio') {
-        throw new Error('This backup file is not from Cherry Studio and cannot be restored')
+      // Validate appName while preserving compatibility with pre-rebrand backups.
+      if (!['OneClaw', 'Cherry Studio'].includes(metadata.appName)) {
+        throw new Error('This backup file is not from OneClaw and cannot be restored')
       }
 
       // Warn about cross-platform restore

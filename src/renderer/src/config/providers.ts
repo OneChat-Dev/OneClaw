@@ -836,7 +836,7 @@ type ProviderUrls = {
 export const PROVIDER_URLS: Record<SystemProviderId, ProviderUrls> = {
   cherryin: {
     api: {
-      url: 'https://open.cherryin.net'
+      url: 'https://api.onechat.tools'
     },
     websites: {
       official: 'https://open.cherryin.ai',

@@ -569,7 +569,7 @@
         }
       }
     },
-    "sidebar_title": "智能体",
+    "sidebar_title": "AI智能体",
     "todo": {
       "panel": {
         "title": "已完成 {{completed}}/{{total}} 个任务"
@@ -696,7 +696,7 @@
     },
     "authHeaderText": "在授权标头中使用：",
     "configuration": "配置",
-    "description": "通过 OpenAI 兼容的 HTTP API 暴露 Cherry Studio 的 AI 功能",
+    "description": "通过 OpenAI 兼容的 HTTP API 暴露 OneClaw 的 AI 功能",
     "documentation": {
       "title": "API 文档"
     },
@@ -775,14 +775,14 @@
   "assistants": {
     "abbr": "助手",
     "clear": {
-      "content": "清空话题会删除助手下所有话题和文件，确定要继续吗？",
-      "title": "清空话题"
+      "content": "清空会话会删除助手下所有会话和文件，确定要继续吗？",
+      "title": "清空会话"
     },
     "copy": {
       "title": "复制助手"
     },
     "delete": {
-      "content": "删除助手会删除所有该助手下的话题和文件，确定要继续吗？",
+      "content": "删除助手会删除所有该助手下的会话和文件，确定要继续吗？",
       "error": {
         "remain_one": "不允许删除最后一个助手"
       },
@@ -1032,7 +1032,7 @@
         "title": "选择添加类型"
       },
       "topic": {
-        "title": "新建话题"
+        "title": "新建会话"
       }
     },
     "alerts": {
@@ -1064,7 +1064,7 @@
       "description": "你好，我是默认助手。你可以立刻开始跟我聊天",
       "name": "默认助手",
       "topic": {
-        "name": "默认话题"
+        "name": "默认会话"
       }
     },
     "history": {
@@ -1102,7 +1102,7 @@
         "context": "清除上下文 {{Command}}"
       },
       "new_session": "新会话 {{Command}}",
-      "new_topic": "新话题 {{Command}}",
+      "new_topic": "新会话 {{Command}}",
       "paste_text_file_confirm": "粘贴到输入框？",
       "pause": "暂停",
       "placeholder": "在这里输入消息，按 {{key}} 发送 - @ 选择模型， / 选择工具",
@@ -1158,7 +1158,7 @@
         "open_file_error": "无法打开文件: {{path}}",
         "reveal_in_finder": "在文件管理器中显示"
       },
-      "topics": "话题",
+      "topics": "会话",
       "translate": "翻译成 {{target_language}}",
       "translating": "翻译中...",
       "upload": {
@@ -1297,25 +1297,25 @@
         "knowledge": {
           "content": {
             "maintext": {
-              "description": "包括话题标题和所有消息的主要文本内容"
+              "description": "包括会话标题和所有消息的主要文本内容"
             }
           },
           "empty": {
-            "no_content": "此话题没有可保存的内容"
+            "no_content": "此会话没有可保存的内容"
           },
           "error": {
-            "save_failed": "保存话题失败，请检查知识库配置"
+            "save_failed": "保存会话失败，请检查知识库配置"
           },
-          "loading": "正在分析话题内容...",
+          "loading": "正在分析会话内容...",
           "select": {
             "content": {
               "label": "选择要保存的内容类型",
               "selected_tip": "已选择 {{count}} 项内容，来自 {{messages}} 条消息",
-              "tip": "话题将以包含完整对话上下文的形式保存到知识库"
+              "tip": "会话将以包含完整对话上下文的形式保存到知识库"
             }
           },
-          "success": "话题已成功保存到知识库（{{count}} 项内容）",
-          "title": "保存话题到知识库"
+          "success": "会话已成功保存到知识库（{{count}} 项内容）",
+          "title": "保存会话到知识库"
         }
       }
     },
@@ -1380,7 +1380,7 @@
     },
     "thinking": "思考中（用时 {{seconds}} 秒）",
     "topics": {
-      "auto_rename": "生成话题名",
+      "auto_rename": "生成会话名",
       "clear": {
         "title": "清空消息"
       },
@@ -1395,8 +1395,8 @@
       },
       "edit": {
         "placeholder": "输入新名称",
-        "title": "编辑话题名",
-        "title_tip": "提示: 双击话题名可以直接就地重命名"
+        "title": "编辑会话名",
+        "title_tip": "提示: 双击会话名可以直接就地重命名"
       },
       "export": {
         "image": "导出为图片",
@@ -1447,47 +1447,47 @@
         "word": "导出为 Word",
         "yuque": "导出到语雀"
       },
-      "list": "话题列表",
+      "list": "会话列表",
       "manage": {
         "clear_selection": "取消选择",
         "delete": {
           "confirm": {
-            "content": "确定要删除选中的 {{count}} 个话题吗？此操作不可撤销。",
-            "title": "删除话题"
+            "content": "确定要删除选中的 {{count}} 个会话吗？此操作不可撤销。",
+            "title": "删除会话"
           },
           "error": "删除失败，请重试",
           "partial_success": "成功删除 {{successCount}} 个，失败 {{failedCount}} 个",
-          "success": "已删除 {{count}} 个话题"
+          "success": "已删除 {{count}} 个会话"
         },
         "deselect_all": "取消全选",
         "error": {
-          "at_least_one": "至少需要保留一个话题"
+          "at_least_one": "至少需要保留一个会话"
         },
         "move": {
           "button": "移动",
           "placeholder": "选择目标助手",
-          "success": "已移动 {{count}} 个话题"
+          "success": "已移动 {{count}} 个会话"
         },
-        "pinned": "已固定的话题",
+        "pinned": "已固定的会话",
         "selected_count": "已选择 {{count}} 个",
-        "title": "管理话题",
-        "unpinned": "未固定的话题"
+        "title": "管理会话",
+        "unpinned": "未固定的会话"
       },
       "move_to": "移动到",
       "new": "开始新对话",
-      "pin": "固定话题",
+      "pin": "固定会话",
       "prompt": {
         "edit": {
-          "title": "编辑话题提示词"
+          "title": "编辑会话提示词"
         },
-        "label": "话题提示词",
-        "tips": "话题提示词：针对当前话题提供额外的补充提示词"
+        "label": "会话提示词",
+        "tips": "会话提示词：针对当前会话提供额外的补充提示词"
       },
       "search": {
-        "placeholder": "搜索话题...",
+        "placeholder": "搜索会话...",
         "title": "搜索"
       },
-      "title": "话题",
+      "title": "会话",
       "unpin": "取消固定"
     },
     "translate": "翻译",
@@ -1694,7 +1694,7 @@
     "subscribe": "订阅",
     "success": "成功",
     "swap": "交换",
-    "topics": "话题",
+    "topics": "会话",
     "translate_text": "翻译文本",
     "unknown": "未知",
     "unnamed": "未命名",
@@ -1908,7 +1908,7 @@
   "history": {
     "continue_chat": "继续聊天",
     "error": {
-      "topic_not_found": "话题不存在"
+      "topic_not_found": "会话不存在"
     },
     "locate": {
       "message": "定位到消息"
@@ -1919,16 +1919,16 @@
         "whole_word": "整词"
       },
       "messages": "搜索所有消息",
-      "placeholder": "搜索话题或消息...",
+      "placeholder": "搜索会话或消息...",
       "sort": {
         "newest": "最新优先",
         "oldest": "最早优先"
       },
       "topics": {
-        "empty": "没有找到相关话题，点击回车键搜索所有消息"
+        "empty": "没有找到相关会话，点击回车键搜索所有消息"
       }
     },
-    "title": "话题搜索"
+    "title": "会话搜索"
   },
   "html_artifacts": {
     "capture": {
@@ -2317,7 +2317,7 @@
       "excel": {
         "export": "导出 Excel 失败"
       },
-      "fetchTopicName": "话题命名失败",
+      "fetchTopicName": "会话命名失败",
       "file": {
         "process_failed": "文件 {{name}} 无法处理",
         "text_extraction_failed": "无法从 {{name}} 中提取文本"
@@ -2554,7 +2554,7 @@
       }
     },
     "topic": {
-      "added": "话题添加成功"
+      "added": "会话添加成功"
     },
     "upgrade": {
       "success": {
@@ -2932,12 +2932,12 @@
       "select_other_provider": "选择其他服务商",
       "setup_hint": "请您先至少配置一个服务商，以获得最佳使用体验",
       "subtitle": "使用 CherryIN 服务商可畅享顶级 AI 服务",
-      "title": "欢迎使用 Cherry Studio"
+      "title": "欢迎使用 OneClaw"
     }
   },
   "openclaw": {
     "checking_installation": "正在检查 OpenClaw 安装状态...",
-    "description": "使用 Cherry Studio 服务商为 OpenClaw 提供支持，OpenClaw 是您的个人 AI 助手，可在 WhatsApp、Telegram、Slack、Discord 等平台上使用。",
+    "description": "使用 OneClaw 服务商为 OpenClaw 提供支持，OpenClaw 是您的个人 AI 助手，可在 WhatsApp、Telegram、Slack、Discord 等平台上使用。",
     "error": {
       "select_provider_model": "请先选择服务商和模型"
     },
@@ -2958,7 +2958,7 @@
     "install_progress": "安装进度",
     "installed_at": "OpenClaw 安装路径",
     "migration": {
-      "description": "检测到 PATH 中存在外部 OpenClaw 安装，但 Cherry Studio 只使用托管的 OpenClaw 二进制文件。请安装托管版本后继续。",
+      "description": "检测到 PATH 中存在外部 OpenClaw 安装，但 OneClaw 只使用托管的 OpenClaw 二进制文件。请安装托管版本后继续。",
       "install_button": "重新安装 OpenClaw",
       "title": "OpenClaw 需要更新"
     },
@@ -3410,7 +3410,7 @@
     "302ai": "302.AI",
     "ai-gateway": "Vercel AI Gateway",
     "aihubmix": "AiHubMix",
-    "aionly": "唯一AI (AiOnly)",
+    "aionly": "AiOnly",
     "alayanew": "Alaya NeW",
     "anthropic": "Anthropic",
     "aws-bedrock": "AWS Bedrock",
@@ -3420,7 +3420,7 @@
     "burncloud": "BurnCloud",
     "cephalon": "Cephalon",
     "cerebras": "Cerebras AI",
-    "cherryin": "CherryIN",
+    "cherryin": "OneChat",
     "copilot": "GitHub Copilot",
     "dashscope": "阿里云百炼",
     "deepseek": "深度求索",
@@ -3428,7 +3428,7 @@
     "doubao": "火山引擎",
     "fireworks": "Fireworks",
     "gemini": "Gemini",
-    "gitee-ai": "模力方舟",
+    "gitee-ai": "Gitee AI",
     "github": "GitHub Models",
     "gpustack": "GPUStack",
     "grok": "Grok",
@@ -3436,11 +3436,11 @@
     "huggingface": "Hugging Face",
     "hunyuan": "腾讯混元",
     "hyperbolic": "Hyperbolic",
-    "infini": "无问芯穹",
+    "infini": "Infini",
     "jina": "Jina",
-    "lanyun": "蓝耘科技",
+    "lanyun": "LANYUN",
     "lmstudio": "LM Studio",
-    "longcat": "龙猫",
+    "longcat": "LongCat AI",
     "mimo": "Xiaomi MiMo",
     "minimax": "MiniMax",
     "minimax-global": "MiniMax 海外版",
@@ -3458,8 +3458,8 @@
     "perplexity": "Perplexity",
     "ph8": "PH8",
     "poe": "Poe",
-    "ppio": "PPIO 派欧云",
-    "qiniu": "七牛云 AI 推理",
+    "ppio": "PPIO",
+    "qiniu": "Qiniu AI",
     "qwenlm": "QwenLM",
     "silicon": "硅基流动",
     "sophnet": "SophNet",
@@ -3469,8 +3469,8 @@
     "tokenflux": "TokenFlux",
     "vertexai": "Vertex AI",
     "voyageai": "Voyage AI",
-    "xirang": "天翼云息壤",
-    "yi": "零一万物",
+    "xirang": "State Cloud Xirang",
+    "yi": "Yi",
     "zai": "Z.ai",
     "zhinao": "360 智脑",
     "zhipu": "智谱开放平台"
@@ -3782,7 +3782,7 @@
           },
           "description": {
             "0": "划词助手需「<strong>辅助功能权限</strong>」才能正常工作。",
-            "1": "请点击「<strong>去设置</strong>」，并在稍后弹出的权限请求弹窗中点击 「<strong>打开系统设置</strong>」 按钮，然后在之后的应用列表中找到 「<strong>Cherry Studio</strong>」，并打开权限开关。",
+            "1": "请点击「<strong>去设置</strong>」，并在稍后弹出的权限请求弹窗中点击 「<strong>打开系统设置</strong>」 按钮，然后在之后的应用列表中找到 「<strong>OneClaw</strong>」，并打开权限开关。",
             "2": "完成设置后，请再次开启划词助手。"
           },
           "title": "辅助功能权限"
@@ -3794,7 +3794,7 @@
         "title": "应用筛选名单",
         "user_tips": {
           "mac": "请输入应用的Bundle ID，每行一个，不区分大小写，可以模糊匹配。例如：com.google.Chrome、com.apple.mail等",
-          "windows": "请输入应用的执行文件名，每行一个，不区分大小写，可以模糊匹配。例如：chrome.exe、weixin.exe、Cherry Studio.exe等"
+          "windows": "请输入应用的执行文件名，每行一个，不区分大小写，可以模糊匹配。例如：chrome.exe、weixin.exe、OneClaw.exe等"
         }
       },
       "linux": {
@@ -3806,7 +3806,7 @@
         "wayland_checklist_subtitle": "确认以下条件已满足，以尽可能优化 Wayland 下的体验：",
         "wayland_description": "当前为 Wayland 模式，受系统限制，部分桌面环境下工具栏只能显示在屏幕中央，无法跟随选中文本定位。建议切换到 X11 模式以获得完整体验。",
         "wayland_title": "Wayland 模式提示",
-        "xwayland_fail": "未启用，请使用 `--ozone-platform=x11` 参数启动 Cherry Studio",
+        "xwayland_fail": "未启用，请使用 `--ozone-platform=x11` 参数启动 OneClaw",
         "xwayland_label": "XWayland 模式：",
         "xwayland_pass": "已启用"
       },
@@ -3961,7 +3961,7 @@
       }
     },
     "advanced": {
-      "auto_switch_to_topics": "自动切换到话题",
+      "auto_switch_to_topics": "自动切换到会话",
       "title": "高级设置"
     },
     "assistant": {
@@ -4099,14 +4099,14 @@
             "test_message_received": "已收到 {{device}} 的 pong 响应",
             "test_message_sent": "已发送 hello world 测试数据"
           },
-          "idle_hint": "扫描已暂停。开始扫描以发现局域网中的 Cherry Studio 设备。",
+          "idle_hint": "扫描已暂停。开始扫描以发现局域网中的 OneClaw 设备。",
           "ip_addresses": "IP 地址",
           "last_seen": "最后活动：{{time}}",
           "metadata": "元数据",
-          "no_connection_warning": "请在 Cherry Studio 移动端打开局域网传输",
+          "no_connection_warning": "请在 OneClaw 移动端打开局域网传输",
           "no_devices": "尚未发现局域网设备",
           "scan_devices": "扫描设备",
-          "scanning_hint": "正在扫描局域网中的 Cherry Studio 设备...",
+          "scanning_hint": "正在扫描局域网中的 OneClaw 设备...",
           "send_file": "发送文件",
           "status": {
             "completed": "传输完成",
@@ -4492,7 +4492,7 @@
           "title": "连接检测"
         },
         "root_path": "文档根路径",
-        "root_path_placeholder": "例如：/CherryStudio",
+        "root_path_placeholder": "例如：/OneClaw",
         "title": "思源笔记配置",
         "token": {
           "help": "在思源笔记 -> 设置 -> 关于中获取",
@@ -4659,7 +4659,7 @@
       },
       "title": "显示设置",
       "topic": {
-        "title": "话题设置"
+        "title": "会话设置"
       },
       "zoom": {
         "title": "缩放设置"
@@ -4890,7 +4890,7 @@
       },
       "oauth": {
         "callback": {
-          "message": "您可以关闭此页面并返回 Cherry Studio",
+          "message": "您可以关闭此页面并返回 OneClaw",
           "title": "认证成功"
         }
       },
@@ -5192,15 +5192,15 @@
       "quick_assistant_model": "快捷助手模型",
       "quick_assistant_selection": "选择助手",
       "quick_model": {
-        "description": "执行话题命名、搜索关键字提炼等简单任务时使用的模型",
+        "description": "执行会话命名、搜索关键字提炼等简单任务时使用的模型",
         "label": "快速模型",
         "setting_title": "快速模型设置",
         "tooltip": "建议选择轻量模型，不建议选择思考模型"
       },
       "topic_naming": {
-        "auto": "话题自动重命名",
-        "label": "话题命名",
-        "prompt": "话题命名提示词"
+        "auto": "会话自动重命名",
+        "label": "会话命名",
+        "prompt": "会话命名提示词"
       },
       "translate_model": "翻译模型",
       "translate_model_description": "翻译服务使用的模型",
@@ -5587,9 +5587,9 @@
       "exit_fullscreen": "退出全屏",
       "label": "按键",
       "mini_window": "快捷助手",
-      "new_topic": "新建话题",
+      "new_topic": "新建会话",
       "press_shortcut": "按下快捷键",
-      "rename_topic": "重命名话题",
+      "rename_topic": "重命名会话",
       "reset_defaults": "重置默认快捷键",
       "reset_defaults_confirm": "确定要重置所有快捷键吗？",
       "reset_to_default": "重置为默认",
@@ -5603,7 +5603,7 @@
       "title": "快捷键",
       "toggle_new_context": "清除上下文",
       "toggle_show_assistants": "切换助手显示",
-      "toggle_show_topics": "切换话题显示",
+      "toggle_show_topics": "切换会话显示",
       "zoom_in": "放大界面",
       "zoom_out": "缩小界面",
       "zoom_reset": "重置缩放"
@@ -5799,14 +5799,14 @@
       }
     },
     "topic": {
-      "pin_to_top": "固定话题置顶",
+      "pin_to_top": "固定会话置顶",
       "position": {
-        "label": "话题位置",
+        "label": "会话位置",
         "left": "左侧",
         "right": "右侧"
       },
       "show": {
-        "time": "显示话题时间"
+        "time": "显示会话时间"
       }
     },
     "translate": {
@@ -5875,7 +5875,7 @@
     "apps": "小程序",
     "code": "Code",
     "files": "文件",
-    "home": "首页",
+    "home": "聊天助手",
     "knowledge": "知识库",
     "launchpad": "启动台",
     "mcp-servers": "MCP 服务器",

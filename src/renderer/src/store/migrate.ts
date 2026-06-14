@@ -2792,7 +2792,7 @@ const migrateConfig = {
             provider.anthropicApiHost = 'https://api.x.ai'
             break
           case 'cherryin':
-            provider.anthropicApiHost = 'https://open.cherryin.net'
+            provider.anthropicApiHost = 'https://api.onechat.tools'
             break
           case 'longcat':
             provider.anthropicApiHost = 'https://api.longcat.chat/anthropic'
