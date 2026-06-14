@@ -34,35 +34,9 @@
   </a>
 </h1>
 <p align="center">
-  <a href="https://github.com/OneChat-Dev/OneClaw">English</a> | 中文 | <a href="https://onechat.chat">官方网站</a> | <a href="https://docs.onechat.chat">文档</a> | <a href="./guides/development.md">开发</a> | <a href="https://github.com/OneChat-Dev/OneClaw/issues">反馈</a><br>
+  <a href="https://github.com/OneChat-Dev/OneClaw">English</a> | 中文 | <a href="https://onechat.chat">官方网站</a> | <a href="https://docs.onechat.chat">文档</a><br>
 </p>
 
-<!-- 题头徽章组合 -->
-
-<div align="center">
-
-[![][deepwiki-shield]][deepwiki-link]
-[![][twitter-shield]][twitter-link]
-[![][discord-shield]][discord-link]
-[![][telegram-shield]][telegram-link]
-
-</div>
-
-<div align="center">
-
-[![][github-release-shield]][github-release-link]
-[![][github-contributors-shield]][github-contributors-link]
-[![][license-shield]][license-link]
-[![][commercial-shield]][commercial-link]
-[![][sponsor-shield]][sponsor-link]
-
-</div>
-
-<div align="center">
- <a href="https://hellogithub.com/repository/1605492e1e2a4df3be07abfa4578dd37" target="_blank" style="text-decoration: none"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=1605492e1e2a4df3be07abfa4578dd37" alt="Featured｜HelloGitHub"  width="220" height="55" /></a>
- <a href="https://trendshift.io/repositories/11772" target="_blank" style="text-decoration: none"><img src="https://trendshift.io/api/badge/repositories/11772" alt="kangfenmao%2Fcherry-studio | Trendshift" width="220" height="55" /></a>
- <a href="https://www.producthunt.com/posts/cherry-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cherry&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496640&theme=light" alt="Cherry&#0032;Studio - AI&#0032;Chatbots&#0044;&#0032;AI&#0032;Desktop&#0032;Client | Product Hunt" width="220" height="55" /></a>
-</div>
 
 # 🍒 OneClaw
 
@@ -201,24 +175,3 @@ https://docs.onechat.chat
 感谢您的关注和贡献。
 
 让我们一起建设。
-
-# 🏢 企业版
-
-在社区版的基础上，我们自豪地推出 **OneClaw 企业版**——一个为现代团队和企业设计的私有部署 AI 生产力与管理平台。
-
-企业版通过集中管理 AI 资源、知识和数据，解决了团队协作中的核心挑战。它赋能组织提升效率、促进创新并确保合规，同时在安全环境中保持对数据的 100% 控制。
-
-## 核心优势
-
-- **统一模型管理**：集中整合和管理各种基于云的大语言模型（如 OpenAI、Anthropic、Google Gemini）和本地部署的私有模型。员工可以开箱即用，无需单独配置。
-- **企业级知识库**：构建、管理和分享全团队的知识库。确保知识得到保留且一致，使团队成员能够基于统一准确的信息与 AI 交互。
-- **细粒度访问控制**：通过统一的管理后台轻松管理员工账户，并为不同模型、知识库和功能分配基于角色的权限。
-- **完全私有部署**：在您的本地服务器或私有云上部署整个后端服务，确保您的数据 100% 私有且在您的控制之下，满足最严格的安全和合规标准。
-- **可靠的后端服务**：提供稳定的 API 服务、企业级数据备份和恢复机制，确保业务连续性。
-
-
-# 🔗 相关项目
-
-- [one-api](https://github.com/songquanpeng/one-api)：LLM API 管理及分发系统，支持 OpenAI、Azure、Anthropic 等主流模型，统一 API 接口，可用于密钥管理与二次分发。
-
-- [ublacklist](https://github.com/iorate/ublacklist)：屏蔽特定网站在 Google 搜索结果中显示
