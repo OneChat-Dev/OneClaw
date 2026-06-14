@@ -10,8 +10,8 @@
  * Any non-critical changes will conflict with the ongoing work.
  *
  * 🔗 Context & Status:
- * - Contribution Hold: https://github.com/CherryHQ/cherry-studio/issues/10954
- * - v2 Refactor PR   : https://github.com/CherryHQ/cherry-studio/pull/10162
+ * - Contribution Hold: https://github.com/OneChat-Dev/OneClaw/issues/10954
+ * - v2 Refactor PR   : https://github.com/OneChat-Dev/OneClaw/pull/10162
  * --------------------------------------------------------------------------
  */
 import type { Stats } from 'node:fs'
@@ -581,7 +581,7 @@ class BackupManager {
       const metadata = await fs.readJson(metadataPath)
 
       // Validate appName while preserving compatibility with pre-rebrand backups.
-      if (!['OneClaw', 'Cherry Studio'].includes(metadata.appName)) {
+      if (!['OneClaw', 'OneClaw'].includes(metadata.appName)) {
         throw new Error('This backup file is not from OneClaw and cannot be restored')
       }
 

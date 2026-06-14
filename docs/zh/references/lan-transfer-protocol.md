@@ -1,9 +1,9 @@
-# Cherry Studio 局域网传输协议规范
+# OneClaw 局域网传输协议规范
 
 > 版本: 1.0
 > 最后更新: 2025-12
 
-本文档定义了 Cherry Studio 桌面客户端（Electron）与移动端（Expo）之间的局域网文件传输协议。
+本文档定义了 OneClaw 桌面客户端（Electron）与移动端（Expo）之间的局域网文件传输协议。
 
 ---
 
@@ -74,7 +74,7 @@
 ```typescript
 // 服务发布参数
 {
-  name: "Cherry Studio Mobile",    // 设备名称
+  name: "OneClaw Mobile",    // 设备名称
   type: "cherrystudio",            // 服务类型
   protocol: "tcp",                 // 协议
   port: 53317,                     // TCP 监听端口
@@ -143,7 +143,7 @@ type LanTransferHandshakeMessage = {
 ```json
 {
   "type": "handshake",
-  "deviceName": "Cherry Studio 1.7.2",
+  "deviceName": "OneClaw 1.7.2",
   "version": "1",
   "platform": "darwin",
   "appVersion": "1.7.2"

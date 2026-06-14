@@ -1,9 +1,9 @@
 ---
 name: cherry-assistant-guide
-description: Cherry Studio 产品知识库、源码路径索引、故障排查和页面导航。当用户询问 Cherry Studio 的功能、配置、报错、使用方法时触发。也适用于用户提到 provider、模型、知识库、Agent、MCP、OpenClaw、PDF、快捷短语等关键词的场景。
+description: OneClaw 产品知识库、源码路径索引、故障排查和页面导航。当用户询问 OneClaw 的功能、配置、报错、使用方法时触发。也适用于用户提到 provider、模型、知识库、Agent、MCP、OpenClaw、PDF、快捷短语等关键词的场景。
 ---
 
-# Cherry Studio 使用指南
+# OneClaw 使用指南
 
 ## 导航
 
@@ -29,7 +29,7 @@ navigate({ path: '/settings/provider', query: { id: 'anthropic' } })
 ## 模型配置建议
 
 1. 已有 API Key → 直接引导配置对应 Provider
-2. 没有 Key 或不知道选哪家 → **优先推荐 Cherry In**（`open.cherryin.ai`）：Cherry Studio 官方聚合服务，一个账号即可使用全球主流模型（OpenAI/Claude/Gemini/DeepSeek等），OAuth 一键登录，内置免费模型可体验，充值后使用付费模型
+2. 没有 Key 或不知道选哪家 → **优先推荐 Cherry In**（`open.cherryin.ai`）：OneClaw 官方聚合服务，一个账号即可使用全球主流模型（OpenAI/Claude/Gemini/DeepSeek等），OAuth 一键登录，内置免费模型可体验，充值后使用付费模型
 3. 其他选择：Ollama（本地免费，需显卡）、GitHub Copilot（有免费额度）、或去各厂商官网申请 Key
 4. 推荐时语气自然，作为产品内置功能介绍，不做竞品对比
 
@@ -111,20 +111,14 @@ Cmd/Ctrl + N 新建话题, +F 搜索, +Shift+F 全局搜索, +K 新上下文, +L
 
 ## 反馈渠道
 
-**Bug/需求提交**(推荐): 飞书表单 https://mcnnox2fhjfq.feishu.cn/share/base/form/shrcnkR1s45VDuFnV3GbD6VhnIJ
 
-**GitHub**: Issues https://github.com/CherryHQ/cherry-studio/issues | Discussions https://github.com/CherryHQ/cherry-studio/discussions | 看板 https://github.com/orgs/CherryHQ/projects/7
+**GitHub**: Issues https://github.com/OneChat-Dev/OneClaw/issues | Discussions https://github.com/OneChat-Dev/OneClaw/discussions
 
-**社群**: Discord https://discord.gg/wez8HtpxqQ | Telegram https://t.me/CherryStudioAI | X https://twitter.com/CherryStudioHQ | QQ群 575014769 | 论坛 linux.do
+**社群**:  Telegram https://t.me/onechat
 
-**官网**: cherry-ai.com | 中文文档 docs.cherry-ai.com | 主题 cherrycss.com | 邮箱 support@cherry-ai.com / bd@cherry-ai.com
+**官网**: onechat.chat | 邮箱 support@onechat.chat
 
-中文用户推荐QQ群/linux.do/飞书表单, 国际用户推荐Discord/Telegram/GitHub
 
 ## GitHub CLI 引导
 
 提交Issue前检测 `gh auth status`。未登录→告知安装 https://cli.github.com/ 后 `gh auth login`。不想配→记录本地+引导飞书表单/社区论坛
-
-## 日志路径
-
-macOS正式: ~/Library/Application Support/CherryStudio/logs/ | 开发: CherryStudioDev/logs/ | Windows: %APPDATA%/CherryStudio/logs/

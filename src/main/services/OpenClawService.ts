@@ -735,7 +735,7 @@ class OpenClawService {
   }
 
   /**
-   * Sync Cherry Studio Provider configuration to OpenClaw
+   * Sync OneClaw Provider configuration to OpenClaw
    */
   public async syncProviderConfig(
     _: Electron.IpcMainInvokeEvent,

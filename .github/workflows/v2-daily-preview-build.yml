@@ -123,7 +123,7 @@ jobs:
               replace: (content) =>
                 content
                   .replace(/^appId: .+$/m, 'appId: com.cherryai.cherrystudio')
-                  .replace(/^productName: .+$/m, 'productName: Cherry Studio Next')
+                  .replace(/^productName: .+$/m, 'productName: OneClaw Next')
             },
             {
               path: 'scripts/notarize.js',
@@ -425,7 +425,7 @@ jobs:
           SHORT_SHA: ${{ needs.metadata.outputs.short_sha }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          echo "## Cherry Studio v2 Preview Build" >> $GITHUB_STEP_SUMMARY
+          echo "## OneClaw v2 Preview Build" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- Branch: \`v2\`" >> $GITHUB_STEP_SUMMARY
           echo "- Commit: \`${SHORT_SHA}\`" >> $GITHUB_STEP_SUMMARY
@@ -464,6 +464,6 @@ jobs:
           DESCRIPTION=$(printf "**Branch:** v2\n\n**Commit:** %.7s\n\n**Date:** %s\n\n**Status:** %s\n\n**Download:** [Actions Artifacts](%s)" "$BUILD_SHA" "$BUILD_DATE" "$STATUS_TEXT" "$RUN_URL")
 
           pnpm tsx scripts/feishu-notify.ts send \
-            -t "Cherry Studio v2 preview build ${STATUS_TEXT}" \
+            -t "OneClaw v2 preview build ${STATUS_TEXT}" \
             -d "$DESCRIPTION" \
             -c "$COLOR"

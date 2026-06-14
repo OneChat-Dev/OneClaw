@@ -1,4 +1,4 @@
-# Cherry Studio Documentation / 文档
+# OneClaw Documentation / 文档
 
 This directory contains the project documentation in multiple languages.
 

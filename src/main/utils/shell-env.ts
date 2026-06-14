@@ -11,7 +11,7 @@ const logger = loggerService.withContext('ShellEnv')
 const SHELL_ENV_TIMEOUT_MS = 15_000
 
 /**
- * Ensures the Cherry Studio bin directory is appended to the user's PATH while
+ * Ensures the OneClaw bin directory is appended to the user's PATH while
  * preserving the original key casing and avoiding duplicate segments.
  */
 const appendCherryBinToPath = (env: Record<string, string>) => {
@@ -302,7 +302,7 @@ async function fetchShellEnv(): Promise<Record<string, string>> {
     return await getLoginShellEnvironment()
   } catch (error) {
     logger.error('Failed to get shell environment, falling back to process.env', { error })
-    // Fallback to current process environment with cherry studio bin path
+    // Fallback to current process environment with OneClaw bin path
     const fallbackEnv: Record<string, string> = {}
     for (const key in process.env) {
       fallbackEnv[key] = process.env[key] || ''

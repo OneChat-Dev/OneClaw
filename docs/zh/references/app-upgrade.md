@@ -46,7 +46,7 @@
 
 ### 手动触发指南
 
-1. 进入 Cherry Studio 仓库的 GitHub **Actions** 页面，选择 **Update App Upgrade Config** 工作流。
+1. 进入 OneClaw 仓库的 GitHub **Actions** 页面，选择 **Update App Upgrade Config** 工作流。
 2. 点击 **Run workflow**，保持默认分支（通常为 `main`），填写 `tag`（如 `v2.1.0`）。  
 3. 只有在 tag 带 `-beta`/`-rc` 后缀时才勾选 `is_prerelease`，稳定版保持默认。  
 4. 启动运行并等待完成，随后到 `x-files/app-upgrade-config` 分支的 PR 查看 `app-upgrade-config.json` 的变更并在验证后合并。
@@ -73,22 +73,22 @@
         "latest": {
           "version": "1.6.7",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.7",
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.7",
             "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v1.6.7"
           }
         },
         "rc": {
           "version": "1.6.0-rc.5",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.0-rc.5",
-            "gitcode": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.0-rc.5"
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.0-rc.5",
+            "gitcode": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.0-rc.5"
           }
         },
         "beta": {
           "version": "1.6.7-beta.3",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.0-beta.3",
-            "gitcode": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.0-beta.3"
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.7.0-beta.3",
+            "gitcode": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.7.0-beta.3"
           }
         }
       }
@@ -119,7 +119,7 @@
       "latest": {
         "version": "2.8.0",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.8.0",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v2.8.0",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v2.8.0"
         }
       },
@@ -134,14 +134,14 @@
       "latest": {
         "version": "3.0.0",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/latest",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/latest",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/latest"
         }
       },
       "rc": {
         "version": "3.0.0-rc.1",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v3.0.0-rc.1",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v3.0.0-rc.1",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v3.0.0-rc.1"
         }
       },

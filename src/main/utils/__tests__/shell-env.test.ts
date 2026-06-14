@@ -159,9 +159,9 @@ describe('shell-env – Windows registry PATH', () => {
     expect(env.Path).toContain('C:\\PlainPath')
   })
 
-  // -- Cherry Studio bin appended -------------------------------------------
+  // -- OneClaw bin appended -------------------------------------------
 
-  it('should append Cherry Studio bin directory to PATH', async () => {
+  it('should append OneClaw bin directory to PATH', async () => {
     vi.mocked(execFileSync).mockImplementation((_cmd, args) => {
       const keyPath = (args as string[])[1]
       if (keyPath === HKLM_KEY) return regOutput(keyPath, 'C:\\Windows')

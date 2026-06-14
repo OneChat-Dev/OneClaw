@@ -46,7 +46,7 @@ The `x-files/app-upgrade-config/app-upgrade-config.json` file is synchronized by
 
 ### Manual Trigger Guide
 
-1. Open the Cherry Studio repository on GitHub → **Actions** tab → select **Update App Upgrade Config**.
+1. Open the OneClaw repository on GitHub → **Actions** tab → select **Update App Upgrade Config**.
 2. Click **Run workflow**, choose the default branch (usually `main`), and fill in the `tag` input (e.g., `v2.1.0`).  
 3. Toggle `is_prerelease` only when the tag carries a prerelease suffix (`-beta`, `-rc`). Leave it unchecked for stable releases.  
 4. Start the run and wait for it to finish. Check the generated PR in the `x-files/app-upgrade-config` branch, verify the diff in `app-upgrade-config.json`, and merge once validated.
@@ -73,22 +73,22 @@ The `x-files/app-upgrade-config/app-upgrade-config.json` file is synchronized by
         "latest": {
           "version": "1.6.7",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.7",
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.7",
             "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v1.6.7"
           }
         },
         "rc": {
           "version": "1.6.0-rc.5",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.0-rc.5",
-            "gitcode": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.6.0-rc.5"
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.0-rc.5",
+            "gitcode": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.6.0-rc.5"
           }
         },
         "beta": {
           "version": "1.6.7-beta.3",
           "feedUrls": {
-            "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.0-beta.3",
-            "gitcode": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.7.0-beta.3"
+            "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.7.0-beta.3",
+            "gitcode": "https://github.com/OneChat-Dev/OneClaw/releases/download/v1.7.0-beta.3"
           }
         }
       }
@@ -119,7 +119,7 @@ When releasing v3.0, if users need to first upgrade to v2.8, you can add:
       "latest": {
         "version": "2.8.0",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v2.8.0",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v2.8.0",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v2.8.0"
         }
       },
@@ -134,14 +134,14 @@ When releasing v3.0, if users need to first upgrade to v2.8, you can add:
       "latest": {
         "version": "3.0.0",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/latest",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/latest",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/latest"
         }
       },
       "rc": {
         "version": "3.0.0-rc.1",
         "feedUrls": {
-          "github": "https://github.com/CherryHQ/cherry-studio/releases/download/v3.0.0-rc.1",
+          "github": "https://github.com/OneChat-Dev/OneClaw/releases/download/v3.0.0-rc.1",
           "gitcode": "https://gitcode.com/CherryHQ/cherry-studio/releases/download/v3.0.0-rc.1"
         }
       },
