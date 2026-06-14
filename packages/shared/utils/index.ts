@@ -5,7 +5,7 @@ export * from './pdf'
 
 export const defaultAppHeaders = () => {
   return {
-    'HTTP-Referer': 'https://cherry-ai.com',
+    'HTTP-Referer': 'https://onechat.chat',
     'X-Title': 'OneClaw'
   }
 }

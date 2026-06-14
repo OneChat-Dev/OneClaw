@@ -123,7 +123,7 @@ export const builtinMCPServers: BuiltinMCPServer[] = [
   {
     id: nanoid(),
     name: BuiltinMCPServerNames.mcpAutoInstall,
-    reference: 'https://docs.cherry-ai.com/advanced-basic/mcp/auto-install',
+    reference: 'https://docs.onechat.chat/advanced-basic/mcp/auto-install',
     type: 'inMemory',
     command: 'npx',
     args: ['-y', '@mcpmarket/mcp-auto-install', 'connect', '--json'],

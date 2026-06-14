@@ -62,7 +62,7 @@ const BuiltinMCPServerList: FC = () => {
                 </Tag>
                 {server?.shouldConfig && (
                   <a
-                    href="https://docs.cherry-ai.com/advanced-basic/mcp/buildin"
+                    href="https://docs.onechat.chat/advanced-basic/mcp/buildin"
                     target="_blank"
                     rel="noopener noreferrer">
                     <Tag color="warning" style={{ borderRadius: 20, margin: 0, fontWeight: 500 }}>

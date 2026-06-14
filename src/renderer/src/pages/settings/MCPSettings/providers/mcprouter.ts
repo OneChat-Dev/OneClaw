@@ -60,7 +60,7 @@ export const syncMCPRouterServers = async (
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
-        'HTTP-Referer': 'https://cherry-ai.com',
+        'HTTP-Referer': 'https://onechat.chat',
         'X-Title': 'OneClaw'
       },
       body: JSON.stringify({})

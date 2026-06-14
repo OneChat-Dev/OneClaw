@@ -68,7 +68,7 @@ const AboutSettings: FC = () => {
   }
 
   const mailto = async () => {
-    const email = 'support@cherry-ai.com'
+    const email = 'support@onechat.chat'
     const subject = `${APP_NAME} Feedback`
     const version = (await window.api.getAppInfo()).version
     const platform = window.electron.process.platform
@@ -81,7 +81,7 @@ const AboutSettings: FC = () => {
   }
 
   const showEnterprise = async () => {
-    onOpenWebsite('https://enterprise.cherry-ai.com')
+    onOpenWebsite('https://t.me/onechat_assist')
   }
 
   const showReleases = async () => {
@@ -170,7 +170,7 @@ const AboutSettings: FC = () => {
 
   const onOpenDocs = () => {
     const isChinese = i18n.language.startsWith('zh')
-    void window.api.openWebsite(isChinese ? 'https://docs.cherry-ai.com/' : 'https://docs.cherry-ai.com/docs/en-us')
+    void window.api.openWebsite(isChinese ? 'https://docs.onechat.chat/' : 'https://docs.onechat.chat/docs/en-us')
   }
 
   return (
@@ -299,7 +299,7 @@ const AboutSettings: FC = () => {
             <Globe size={18} />
             {t('settings.about.website.title')}
           </SettingRowTitle>
-          <Button onClick={() => onOpenWebsite('https://cherry-ai.com')}>{t('settings.about.website.button')}</Button>
+          <Button onClick={() => onOpenWebsite('https://onechat.chat')}>{t('settings.about.website.button')}</Button>
         </SettingRow>
         <SettingDivider />
         <SettingRow>
@@ -333,7 +333,7 @@ const AboutSettings: FC = () => {
             <Briefcase size={18} />
             {t('settings.about.careers.title')}
           </SettingRowTitle>
-          <Button onClick={() => onOpenWebsite('https://www.cherry-ai.com/careers')}>
+          <Button onClick={() => onOpenWebsite('https://t.me/onechat_assist')}>
             {t('settings.about.careers.button')}
           </Button>
         </SettingRow>

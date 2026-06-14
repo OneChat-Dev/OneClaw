@@ -34,7 +34,7 @@
   </a>
 </h1>
 
-<p align="center">English | <a href="./docs/zh/README.md">中文</a> | <a href="https://onechat.chat">Official Site</a> | <a href="https://docs.cherry-ai.com/docs/en-us">Documents</a> | <a href="./docs/en/guides/development.md">Development</a> | <a href="https://github.com/OneChat-Dev/OneClaw/issues">Feedback</a><br></p>
+<p align="center">English | <a href="./docs/zh/README.md">中文</a> | <a href="https://onechat.chat">Official Site</a> | <a href="https://docs.onechat.chat/docs/en-us">Documents</a> | <a href="./docs/en/guides/development.md">Development</a> | <a href="https://github.com/OneChat-Dev/OneClaw/issues">Feedback</a><br></p>
 
 <div align="center">
 
@@ -66,7 +66,7 @@
 OneClaw is a desktop client that supports multiple LLM providers, available on Windows, Mac and Linux.
 
 👏 Join [Telegram Group](https://t.me/onechat)
-❤️ Like OneClaw? Give it a star 🌟 or [Sponsor](docs/zh/guides/sponsor.md) to support the development!
+
 
 # 🌠 Screenshot
 
@@ -237,7 +237,7 @@ The Enterprise Edition addresses core challenges in team collaboration by centra
 
 ## ✨ Online Demo
 
-**🔗 [OneClaw Enterprise](https://enterprise.cherry-ai.com)**
+**🔗 [OneClaw Enterprise](https://t.me/onechat_assist)**
 
 ## Version Comparison
 

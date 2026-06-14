@@ -99,13 +99,13 @@ export class AppMenuService {
           {
             label: appMenu.website,
             click: () => {
-              void shell.openExternal('https://cherry-ai.com')
+              void shell.openExternal('https://onechat.chat')
             }
           },
           {
             label: appMenu.documentation,
             click: () => {
-              void shell.openExternal('https://cherry-ai.com/docs')
+              void shell.openExternal('https://onechat.chat/docs')
             }
           },
           {

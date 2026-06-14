@@ -951,7 +951,7 @@ describe('providerToAiSdkConfig', () => {
 
       const settings = config.providerSettings
       expect(settings.headers).toBeDefined()
-      expect(settings.headers!['HTTP-Referer']).toBe('https://cherry-ai.com')
+      expect(settings.headers!['HTTP-Referer']).toBe('https://onechat.chat')
       expect(settings.headers!['X-Title']).toBe('OneClaw')
     })
 
